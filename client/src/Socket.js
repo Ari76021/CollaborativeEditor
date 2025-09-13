@@ -2,7 +2,7 @@
 import { io } from "socket.io-client";
 
 export const initSocket = async () => {
-  const backendUrl = process.env.REACT_APP_BACKEND_URL || "http://localhost:3000";
+  const backendUrl = "https://collaborative-editor-coral.vercel.app/";
   const option = {
     forceNew: true,
     reconnectionAttempts: Infinity,
