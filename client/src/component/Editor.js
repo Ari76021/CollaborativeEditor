@@ -201,7 +201,7 @@ int main() {
     try {
       const code = editorRef.current.getValue();
       const resp = await fetch(
-        `${process.env.REACT_APP_BACKEND_URL || "http://localhost:3000"}/run`,
+        `${"https://collaborative-editor-coral.vercel.app/"}/run`,
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
