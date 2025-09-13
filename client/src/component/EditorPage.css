@@ -1,0 +1,110 @@
+/* Sidebar */
+.sidebar {
+  width: 280px;
+  padding: 12px;
+  background: #1e1e1e;
+  color: #ddd;
+  display: flex;
+  flex-direction: column;
+  font-family: monospace;
+  border-right: 1px solid #333;
+}
+
+.sidebar h4 {
+  margin: 8px 0;
+  font-size: 14px;
+  color: #bbb;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Project Explorer items */
+.explorer-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s;
+  border-radius: 4px;
+}
+
+.explorer-item:hover {
+  background: #2d2d2d;
+}
+
+.explorer-item.active {
+  background: #333;
+  color: #fff;
+  font-weight: bold;
+}
+
+.explorer-folder {
+  font-weight: bold;
+  padding: 4px 8px;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.explorer-folder:hover {
+  background: #2d2d2d;
+  border-radius: 4px;
+}
+
+/* Buttons */
+.small-btn {
+  font-size: 12px;
+  margin-right: 6px;
+  padding: 2px 6px;
+  border: none;
+  border-radius: 4px;
+  background: #333;
+  color: #ddd;
+  cursor: pointer;
+}
+
+.small-btn:hover {
+  background: #444;
+  color: #fff;
+}
+
+.root-btn {
+  margin-top: 6px;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 4px;
+  background: #333;
+  color: #ddd;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.root-btn:hover {
+  background: #444;
+  color: #fff;
+}
+
+.root-btn.danger {
+  background: #e74c3c;
+  color: #fff;
+}
+
+.root-btn.danger:hover {
+  background: #c0392b;
+}
+
+/* Delete button */
+.delete-btn {
+  margin-left: 8px;
+  color: #e74c3c;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.delete-btn:hover {
+  color: #ff6b6b;
+}
